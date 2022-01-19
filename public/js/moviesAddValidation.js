@@ -6,15 +6,34 @@ window.onload = function () {
 
   formulario.addEventListener("submit", (e) => {
     e.preventDefault();
+    let errores = [];
     const datosForm = Object.fromEntries(new FormData(formulario));
 
-    datosForm.awards;
-    datosForm.title;
-    datosForm.genre_id;
-    datosForm.rating;
-    datosForm.release_date;
-    datosForm.length;
+    if (datosForm.awards === "") {
+      errores.push("Awards debe estar completo");
+    } else {
+    }
+    if (datosForm.title === "") {
+    } else {
+    }
+    if (datosForm.genre_id === "") {
+    } else {
+    }
+    if (datosForm.rating === "") {
+    } else {
+    }
+    if (datosForm.release_date === "") {
+    } else {
+    }
+    if (datosForm.length === "") {
+    } else {
+    }
+
+    if (errores.lenght > 0) {
+      e.preventDefault();
+    }
 
     console.log(datosForm);
+    console.log(errores);
   });
 };
