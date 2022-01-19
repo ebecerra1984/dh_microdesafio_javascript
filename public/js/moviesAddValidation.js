@@ -5,7 +5,7 @@ window.onload = function () {
   const formulario = document.querySelector("form");
 
   formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     let errores = [];
     const datosForm = Object.fromEntries(new FormData(formulario));
 
@@ -29,7 +29,7 @@ window.onload = function () {
     } else {
     }
 
-    if (errores.lenght > 0) {
+    if (errores.length > 0) {
       e.preventDefault();
     }
 
