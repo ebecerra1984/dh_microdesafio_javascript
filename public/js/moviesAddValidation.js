@@ -3,7 +3,7 @@ window.onload = function () {
   titulo.focus();
 
   const formulario = document.querySelector("form");
-  console.log(formulario.title);
+  console.log(formulario);
 
   formulario.addEventListener("submit", (e) => {
     // e.preventDefault();
@@ -26,18 +26,18 @@ window.onload = function () {
     } else {
     }
     if (datosForm.rating === "") {
-      errores.push("Awards debe estar completo");
-      formulario.awards.classList.add("is-invalid");
+      errores.push("Calificacion debe estar completo");
+      formulario.rating.classList.add("is-invalid");
     } else {
     }
     if (datosForm.release_date === "") {
-      errores.push("Awards debe estar completo");
-      formulario.awards.classList.add("is-invalid");
+      errores.push("Fecha de estreno debe estar completo");
+      formulario.release_date.classList.add("is-invalid");
     } else {
     }
     if (datosForm.length === "") {
-      errores.push("Awards debe estar completo");
-      formulario.awards.classList.add("is-invalid");
+      errores.push("Duracion debe estar completo");
+      formulario.length.classList.add("is-invalid");
     } else {
     }
 
